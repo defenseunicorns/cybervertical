@@ -71,6 +71,8 @@ base-check-env:
   before_script:
     - echo "Hello There!"
     - env | grep SHELL
+  after_script:
+    - echo "Finished checking env vars, looks good!"
 ```
 
 ```yaml
