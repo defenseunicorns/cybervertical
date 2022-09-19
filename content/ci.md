@@ -68,7 +68,7 @@ eg.
 # base/jobs/<lang>/pre.yaml
 
 base-check-env:
-  pre_script:
+  before_script:
     - echo "Hello There!"
     - env | grep SHELL
 ```
@@ -81,7 +81,7 @@ include:
 
 check-env:
   extends: base-check-env
-  pre-script: null
+  before_script: null
   script:
     - echo "General Kenobi!"
 ```
